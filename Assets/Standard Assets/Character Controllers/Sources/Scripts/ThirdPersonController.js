@@ -4,7 +4,7 @@
 
 public var idleAnimation : AnimationClip;
 public var walkAnimation : AnimationClip;
-public var runAnimation : AnimationClip;
+public var runAnimation : AnimationClip; //ertertreer
 public var jumpPoseAnimation : AnimationClip;
 
 public var walkMaxAnimationSpeed : float = 0.75;
@@ -72,7 +72,7 @@ private var movingBack = false;
 // Is the user pressing any keys?
 private var isMoving = false;
 // When did the user start walking (Used for going into trot after a while)
-private var walkTimeStart = 0.0;
+private var walkTimeStart = 0.0; //erarararga
 // Last time the jump button was clicked down
 private var lastJumpButtonTime = -10.0;
 // Last time we performed a jump
