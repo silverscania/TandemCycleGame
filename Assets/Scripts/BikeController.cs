@@ -10,6 +10,7 @@ public class BikeController : MonoBehaviour {
 	public GameObject mark;
 	public AudioSource audioSourceClick;
 	public AudioSource audioSourcePedal;
+	public AudioSource audioSourceBrake;
 	public float maxSpeed = 50.0f;
 	public float steerSpeed = 10.0f;
 	public float maxSteerAngle = 10.0f;
@@ -119,6 +120,9 @@ public class BikeController : MonoBehaviour {
 		// Brake if players don't know how to ride a tandem bike
 		if ((Time.time - lastGoodUpdate) > brakeThreshold) {
 			//Debug.Log ("BRAKE!!! " + (Time.time - lastGoodUpdate));
+			if(frame.velocity.magnitude > 3 && !audioSourceBrake.isPlaying){
+				audioSourceBrake.Play();
+			}
 			setTorqueAndBrakeBack(0, brakeAmount);
 			setTorqueAndBrakeFront(0, brakeAmount);
 		}

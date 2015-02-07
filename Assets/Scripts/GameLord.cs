@@ -14,6 +14,9 @@ public class GameLord : MonoBehaviour {
 	public TextMesh winnerName;
 	public TextMesh countDown;
 
+	public AudioClip countSound;
+	public AudioClip goSound;
+
 	public float winDistance; // If the teams are this far apart, crash the back one and the first one wins
 
 	public bool gameOver = false;
@@ -33,6 +36,7 @@ public class GameLord : MonoBehaviour {
 	void Update () {
 		float distance = Mathf.Abs (team1.frame.transform.localPosition.z - team2.frame.transform.localPosition.z);
 		BikeController winner = team1.frame.transform.localPosition.z > team2.frame.transform.localPosition.z ? team1 : team2;
+
 		if (distance >= winDistance) {
 			gameOver = true;
 			endText.SetActive(true);
@@ -65,6 +69,7 @@ public class GameLord : MonoBehaviour {
 
 		if (countDownTime == 0) {
 			countDown.text = "GO!";
+			AudioSource.PlayClipAtPoint(goSound, transform.position, 0.9f);
 		} else if (countDownTime == -1) {
 			countDown.text = "";
 			team1.enabled = true;
@@ -72,6 +77,7 @@ public class GameLord : MonoBehaviour {
 			CancelInvoke();
 		} else {
 			countDown.text = countDownTime + "";
+			AudioSource.PlayClipAtPoint(countSound, transform.position, 1f);
 		}
 	}
 
