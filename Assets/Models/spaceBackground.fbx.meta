@@ -1,0 +1,1282 @@
+fileFormatVersion: 2
+guid: 21019d4c587e2184886627dd4aecb0ee
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: back
+    100002: back 1
+    100004: back 2
+    100006: back 3
+    100008: back 4
+    100010: back 5
+    100012: back 6
+    100014: back 7
+    100016: back 8
+    100018: back 9
+    100020: group1
+    100022: group2
+    100024: group3
+    100026: group4
+    100028: group5
+    100030: group6
+    100032: head
+    100034: head 1
+    100036: head 2
+    100038: head 3
+    100040: head 4
+    100042: head 5
+    100044: head 6
+    100046: head 7
+    100048: head 8
+    100050: head 9
+    100052: hips
+    100054: hips 1
+    100056: hips 2
+    100058: hips 3
+    100060: hips1
+    100062: hips1 1
+    100064: hips1 2
+    100066: hips2
+    100068: hips2 1
+    100070: hips2 2
+    100072: left_elbow
+    100074: left_elbow 1
+    100076: left_elbow 2
+    100078: left_elbow 3
+    100080: left_elbow 4
+    100082: left_elbow 5
+    100084: left_elbow 6
+    100086: left_elbow 7
+    100088: left_elbow 8
+    100090: left_elbow 9
+    100092: left_foot
+    100094: left_foot 1
+    100096: left_foot 2
+    100098: left_foot 3
+    100100: left_foot 4
+    100102: left_foot 5
+    100104: left_foot 6
+    100106: left_foot 7
+    100108: left_foot 8
+    100110: left_foot 9
+    100112: left_knee
+    100114: left_knee 1
+    100116: left_knee 2
+    100118: left_knee 3
+    100120: left_knee 4
+    100122: left_knee 5
+    100124: left_knee 6
+    100126: left_knee 7
+    100128: left_knee 8
+    100130: left_knee 9
+    100132: left_leg
+    100134: left_leg 1
+    100136: left_leg 2
+    100138: left_leg 3
+    100140: left_leg 4
+    100142: left_leg 5
+    100144: left_leg 6
+    100146: left_leg 7
+    100148: left_leg 8
+    100150: left_leg 9
+    100152: left_shoulder
+    100154: left_shoulder 1
+    100156: left_shoulder 2
+    100158: left_shoulder 3
+    100160: left_shoulder 4
+    100162: left_shoulder 5
+    100164: left_shoulder 6
+    100166: left_shoulder 7
+    100168: left_shoulder 8
+    100170: left_shoulder 9
+    100172: left_wrist
+    100174: left_wrist 1
+    100176: left_wrist 2
+    100178: left_wrist 3
+    100180: left_wrist 4
+    100182: left_wrist 5
+    100184: left_wrist 6
+    100186: left_wrist 7
+    100188: left_wrist 8
+    100190: left_wrist 9
+    100192: man
+    100194: man 1
+    100196: man 2
+    100198: man 3
+    100200: man 4
+    100202: man 5
+    100204: moon
+    100206: pCone1
+    100208: pCube1
+    100210: pCube2
+    100212: pCube3
+    100214: pCube4
+    100216: pCube5
+    100218: pCube6
+    100220: pCube7
+    100222: pCylinder1
+    100224: pCylinder10
+    100226: pCylinder11
+    100228: pCylinder11 1
+    100230: pCylinder11 10
+    100232: pCylinder11 11
+    100234: pCylinder11 12
+    100236: pCylinder11 13
+    100238: pCylinder11 14
+    100240: pCylinder11 15
+    100242: pCylinder11 16
+    100244: pCylinder11 17
+    100246: pCylinder11 18
+    100248: pCylinder11 19
+    100250: pCylinder11 2
+    100252: pCylinder11 20
+    100254: pCylinder11 21
+    100256: pCylinder11 22
+    100258: pCylinder11 23
+    100260: pCylinder11 24
+    100262: pCylinder11 25
+    100264: pCylinder11 26
+    100266: pCylinder11 27
+    100268: pCylinder11 3
+    100270: pCylinder11 4
+    100272: pCylinder11 5
+    100274: pCylinder11 6
+    100276: pCylinder11 7
+    100278: pCylinder11 8
+    100280: pCylinder11 9
+    100282: pCylinder12
+    100284: pCylinder12 1
+    100286: pCylinder12 10
+    100288: pCylinder12 11
+    100290: pCylinder12 12
+    100292: pCylinder12 13
+    100294: pCylinder12 14
+    100296: pCylinder12 15
+    100298: pCylinder12 16
+    100300: pCylinder12 17
+    100302: pCylinder12 18
+    100304: pCylinder12 19
+    100306: pCylinder12 2
+    100308: pCylinder12 20
+    100310: pCylinder12 21
+    100312: pCylinder12 22
+    100314: pCylinder12 23
+    100316: pCylinder12 24
+    100318: pCylinder12 25
+    100320: pCylinder12 26
+    100322: pCylinder12 27
+    100324: pCylinder12 3
+    100326: pCylinder12 4
+    100328: pCylinder12 5
+    100330: pCylinder12 6
+    100332: pCylinder12 7
+    100334: pCylinder12 8
+    100336: pCylinder12 9
+    100338: pCylinder13
+    100340: pCylinder13 1
+    100342: pCylinder13 10
+    100344: pCylinder13 11
+    100346: pCylinder13 12
+    100348: pCylinder13 13
+    100350: pCylinder13 14
+    100352: pCylinder13 15
+    100354: pCylinder13 16
+    100356: pCylinder13 17
+    100358: pCylinder13 18
+    100360: pCylinder13 19
+    100362: pCylinder13 2
+    100364: pCylinder13 20
+    100366: pCylinder13 21
+    100368: pCylinder13 22
+    100370: pCylinder13 23
+    100372: pCylinder13 24
+    100374: pCylinder13 25
+    100376: pCylinder13 26
+    100378: pCylinder13 27
+    100380: pCylinder13 3
+    100382: pCylinder13 4
+    100384: pCylinder13 5
+    100386: pCylinder13 6
+    100388: pCylinder13 7
+    100390: pCylinder13 8
+    100392: pCylinder13 9
+    100394: pCylinder2
+    100396: pCylinder3
+    100398: pCylinder4
+    100400: pCylinder5
+    100402: pCylinder6
+    100404: pCylinder7
+    100406: pCylinder8
+    100408: pCylinder9
+    100410: pPlane1
+    100412: pPlane1 1
+    100414: pPlane1 2
+    100416: pPlane1 3
+    100418: pPlane1 4
+    100420: pPlane1 5
+    100422: pSphere1
+    100424: pSphere2
+    100426: pSphere3
+    100428: right_elbow
+    100430: right_elbow 1
+    100432: right_elbow 2
+    100434: right_elbow 3
+    100436: right_elbow 4
+    100438: right_elbow 5
+    100440: right_elbow 6
+    100442: right_elbow 7
+    100444: right_elbow 8
+    100446: right_elbow 9
+    100448: right_foot
+    100450: right_foot 1
+    100452: right_foot 2
+    100454: right_foot 3
+    100456: right_foot 4
+    100458: right_foot 5
+    100460: right_foot 6
+    100462: right_foot 7
+    100464: right_foot 8
+    100466: right_foot 9
+    100468: right_knee
+    100470: right_knee 1
+    100472: right_knee 2
+    100474: right_knee 3
+    100476: right_knee 4
+    100478: right_knee 5
+    100480: right_knee 6
+    100482: right_knee 7
+    100484: right_knee 8
+    100486: right_knee 9
+    100488: right_leg
+    100490: right_leg 1
+    100492: right_leg 2
+    100494: right_leg 3
+    100496: right_leg 4
+    100498: right_leg 5
+    100500: right_leg 6
+    100502: right_leg 7
+    100504: right_leg 8
+    100506: right_leg 9
+    100508: right_shoulder
+    100510: right_shoulder 1
+    100512: right_shoulder 2
+    100514: right_shoulder 3
+    100516: right_shoulder 4
+    100518: right_shoulder 5
+    100520: right_shoulder 6
+    100522: right_shoulder 7
+    100524: right_shoulder 8
+    100526: right_shoulder 9
+    100528: right_wrist
+    100530: right_wrist 1
+    100532: right_wrist 2
+    100534: right_wrist 3
+    100536: right_wrist 4
+    100538: right_wrist 5
+    100540: right_wrist 6
+    100542: right_wrist 7
+    100544: right_wrist 8
+    100546: right_wrist 9
+    100548: road
+    100550: road1
+    100552: rocket
+    100554: //RootNode
+    100556: spectators1:back
+    100558: spectators1:back 1
+    100560: spectators1:back 2
+    100562: spectators1:back 3
+    100564: spectators1:group1
+    100566: spectators1:group2
+    100568: spectators1:group3
+    100570: spectators1:group4
+    100572: spectators1:head
+    100574: spectators1:head 1
+    100576: spectators1:head 2
+    100578: spectators1:head 3
+    100580: spectators1:hips
+    100582: spectators1:hips 1
+    100584: spectators1:hips1
+    100586: spectators1:hips2
+    100588: spectators1:left_elbow
+    100590: spectators1:left_elbow 1
+    100592: spectators1:left_elbow 2
+    100594: spectators1:left_elbow 3
+    100596: spectators1:left_foot
+    100598: spectators1:left_foot 1
+    100600: spectators1:left_foot 2
+    100602: spectators1:left_foot 3
+    100604: spectators1:left_knee
+    100606: spectators1:left_knee 1
+    100608: spectators1:left_knee 2
+    100610: spectators1:left_knee 3
+    100612: spectators1:left_leg
+    100614: spectators1:left_leg 1
+    100616: spectators1:left_leg 2
+    100618: spectators1:left_leg 3
+    100620: spectators1:left_shoulder
+    100622: spectators1:left_shoulder 1
+    100624: spectators1:left_shoulder 2
+    100626: spectators1:left_shoulder 3
+    100628: spectators1:left_wrist
+    100630: spectators1:left_wrist 1
+    100632: spectators1:left_wrist 2
+    100634: spectators1:left_wrist 3
+    100636: spectators1:man
+    100638: spectators1:man 1
+    100640: spectators1:man 2
+    100642: spectators1:pPlane1
+    100644: spectators1:pPlane1 1
+    100646: spectators1:pPlane1 2
+    100648: spectators1:right_elbow
+    100650: spectators1:right_elbow 1
+    100652: spectators1:right_elbow 2
+    100654: spectators1:right_elbow 3
+    100656: spectators1:right_foot
+    100658: spectators1:right_foot 1
+    100660: spectators1:right_foot 2
+    100662: spectators1:right_foot 3
+    100664: spectators1:right_knee
+    100666: spectators1:right_knee 1
+    100668: spectators1:right_knee 2
+    100670: spectators1:right_knee 3
+    100672: spectators1:right_leg
+    100674: spectators1:right_leg 1
+    100676: spectators1:right_leg 2
+    100678: spectators1:right_leg 3
+    100680: spectators1:right_shoulder
+    100682: spectators1:right_shoulder 1
+    100684: spectators1:right_shoulder 2
+    100686: spectators1:right_shoulder 3
+    100688: spectators1:right_wrist
+    100690: spectators1:right_wrist 1
+    100692: spectators1:right_wrist 2
+    100694: spectators1:right_wrist 3
+    100696: star
+    100698: star1
+    100700: star10
+    100702: star11
+    100704: star12
+    100706: star13
+    100708: star14
+    100710: star15
+    100712: star16
+    100714: star17
+    100716: star18
+    100718: star19
+    100720: star2
+    100722: star20
+    100724: star21
+    100726: star22
+    100728: star23
+    100730: star24
+    100732: star25
+    100734: star26
+    100736: star27
+    100738: star3
+    100740: star4
+    100742: star5
+    100744: star6
+    100746: star7
+    100748: star8
+    100750: star9
+    100752: transform1
+    100754: transform10
+    100756: transform100
+    100758: transform101
+    100760: transform102
+    100762: transform103
+    100764: transform104
+    100766: transform105
+    100768: transform106
+    100770: transform11
+    100772: transform12
+    100774: transform13
+    100776: transform14
+    100778: transform15
+    100780: transform16
+    100782: transform17
+    100784: transform18
+    100786: transform19
+    100788: transform2
+    100790: transform20
+    100792: transform21
+    100794: transform22
+    100796: transform23
+    100798: transform24
+    100800: transform25
+    100802: transform26
+    100804: transform27
+    100806: transform28
+    100808: transform29
+    100810: transform3
+    100812: transform30
+    100814: transform31
+    100816: transform32
+    100818: transform33
+    100820: transform34
+    100822: transform35
+    100824: transform36
+    100826: transform37
+    100828: transform38
+    100830: transform39
+    100832: transform4
+    100834: transform40
+    100836: transform41
+    100838: transform42
+    100840: transform43
+    100842: transform44
+    100844: transform45
+    100846: transform46
+    100848: transform47
+    100850: transform48
+    100852: transform49
+    100854: transform5
+    100856: transform50
+    100858: transform51
+    100860: transform52
+    100862: transform53
+    100864: transform54
+    100866: transform55
+    100868: transform56
+    100870: transform57
+    100872: transform58
+    100874: transform59
+    100876: transform6
+    100878: transform60
+    100880: transform61
+    100882: transform62
+    100884: transform63
+    100886: transform64
+    100888: transform65
+    100890: transform66
+    100892: transform67
+    100894: transform68
+    100896: transform69
+    100898: transform7
+    100900: transform70
+    100902: transform71
+    100904: transform72
+    100906: transform73
+    100908: transform74
+    100910: transform75
+    100912: transform76
+    100914: transform77
+    100916: transform78
+    100918: transform79
+    100920: transform8
+    100922: transform80
+    100924: transform81
+    100926: transform82
+    100928: transform83
+    100930: transform84
+    100932: transform85
+    100934: transform86
+    100936: transform87
+    100938: transform88
+    100940: transform89
+    100942: transform9
+    100944: transform90
+    100946: transform91
+    100948: transform92
+    100950: transform93
+    100952: transform94
+    100954: transform95
+    100956: transform96
+    100958: transform97
+    100960: transform98
+    100962: transform99
+    100964: pCylinder1 1
+    100966: pCylinder11 28
+    100968: pCylinder11 29
+    100970: pCylinder11 30
+    100972: pCylinder11 31
+    100974: pCylinder11 32
+    100976: pCylinder11 33
+    100978: pCylinder11 34
+    100980: pCylinder11 35
+    100982: pCylinder12 28
+    100984: pCylinder12 29
+    100986: pCylinder12 30
+    100988: pCylinder12 31
+    100990: pCylinder12 32
+    100992: pCylinder12 33
+    100994: pCylinder12 34
+    100996: pCylinder12 35
+    100998: pCylinder13 28
+    101000: pCylinder13 29
+    101002: pCylinder13 30
+    101004: pCylinder13 31
+    101006: pCylinder13 32
+    101008: pCylinder13 33
+    101010: pCylinder13 34
+    101012: pCylinder13 35
+    101014: pCylinder14
+    101016: pCylinder15
+    101018: pCylinder16
+    101020: pCylinder17
+    101022: pCylinder18
+    101024: pCylinder19
+    101026: pCylinder20
+    101028: pCylinder21
+    101030: pCylinder22
+    101032: pCylinder23
+    101034: pCylinder24
+    101036: pCylinder25
+    101038: pSphere4
+    101040: star28
+    101042: star29
+    101044: star30
+    101046: star31
+    101048: star32
+    101050: star33
+    101052: star34
+    101054: star35
+    101056: transform107
+    101058: transform108
+    101060: transform109
+    101062: transform110
+    101064: transform111
+    101066: transform112
+    101068: transform113
+    101070: transform114
+    101072: transform115
+    101074: transform116
+    101076: transform117
+    101078: transform118
+    101080: transform119
+    101082: transform120
+    101084: transform121
+    101086: transform122
+    101088: transform123
+    101090: transform124
+    101092: transform125
+    101094: transform126
+    101096: transform127
+    101098: transform128
+    101100: transform129
+    101102: transform130
+    101104: transform131
+    101106: transform132
+    101108: transform133
+    101110: transform134
+    101112: transform135
+    101114: transform136
+    101116: transform137
+    101118: transform138
+    101120: transform139
+    101122: transform140
+    101124: transform141
+    101126: transform142
+    101128: transform143
+    101130: transform144
+    101132: transform145
+    101134: transform146
+    101136: transform147
+    101138: transform148
+    101140: transform149
+    101142: transform150
+    101144: transform151
+    101146: transform152
+    101148: transform153
+    101150: transform154
+    101152: transform155
+    101154: transform156
+    101156: transform157
+    101158: transform158
+    101160: transform159
+    400000: back
+    400002: back 1
+    400004: back 2
+    400006: back 3
+    400008: back 4
+    400010: back 5
+    400012: back 6
+    400014: back 7
+    400016: back 8
+    400018: back 9
+    400020: group1
+    400022: group2
+    400024: group3
+    400026: group4
+    400028: group5
+    400030: group6
+    400032: head
+    400034: head 1
+    400036: head 2
+    400038: head 3
+    400040: head 4
+    400042: head 5
+    400044: head 6
+    400046: head 7
+    400048: head 8
+    400050: head 9
+    400052: hips
+    400054: hips 1
+    400056: hips 2
+    400058: hips 3
+    400060: hips1
+    400062: hips1 1
+    400064: hips1 2
+    400066: hips2
+    400068: hips2 1
+    400070: hips2 2
+    400072: left_elbow
+    400074: left_elbow 1
+    400076: left_elbow 2
+    400078: left_elbow 3
+    400080: left_elbow 4
+    400082: left_elbow 5
+    400084: left_elbow 6
+    400086: left_elbow 7
+    400088: left_elbow 8
+    400090: left_elbow 9
+    400092: left_foot
+    400094: left_foot 1
+    400096: left_foot 2
+    400098: left_foot 3
+    400100: left_foot 4
+    400102: left_foot 5
+    400104: left_foot 6
+    400106: left_foot 7
+    400108: left_foot 8
+    400110: left_foot 9
+    400112: left_knee
+    400114: left_knee 1
+    400116: left_knee 2
+    400118: left_knee 3
+    400120: left_knee 4
+    400122: left_knee 5
+    400124: left_knee 6
+    400126: left_knee 7
+    400128: left_knee 8
+    400130: left_knee 9
+    400132: left_leg
+    400134: left_leg 1
+    400136: left_leg 2
+    400138: left_leg 3
+    400140: left_leg 4
+    400142: left_leg 5
+    400144: left_leg 6
+    400146: left_leg 7
+    400148: left_leg 8
+    400150: left_leg 9
+    400152: left_shoulder
+    400154: left_shoulder 1
+    400156: left_shoulder 2
+    400158: left_shoulder 3
+    400160: left_shoulder 4
+    400162: left_shoulder 5
+    400164: left_shoulder 6
+    400166: left_shoulder 7
+    400168: left_shoulder 8
+    400170: left_shoulder 9
+    400172: left_wrist
+    400174: left_wrist 1
+    400176: left_wrist 2
+    400178: left_wrist 3
+    400180: left_wrist 4
+    400182: left_wrist 5
+    400184: left_wrist 6
+    400186: left_wrist 7
+    400188: left_wrist 8
+    400190: left_wrist 9
+    400192: man
+    400194: man 1
+    400196: man 2
+    400198: man 3
+    400200: man 4
+    400202: man 5
+    400204: moon
+    400206: pCone1
+    400208: pCube1
+    400210: pCube2
+    400212: pCube3
+    400214: pCube4
+    400216: pCube5
+    400218: pCube6
+    400220: pCube7
+    400222: pCylinder1
+    400224: pCylinder10
+    400226: pCylinder11
+    400228: pCylinder11 1
+    400230: pCylinder11 10
+    400232: pCylinder11 11
+    400234: pCylinder11 12
+    400236: pCylinder11 13
+    400238: pCylinder11 14
+    400240: pCylinder11 15
+    400242: pCylinder11 16
+    400244: pCylinder11 17
+    400246: pCylinder11 18
+    400248: pCylinder11 19
+    400250: pCylinder11 2
+    400252: pCylinder11 20
+    400254: pCylinder11 21
+    400256: pCylinder11 22
+    400258: pCylinder11 23
+    400260: pCylinder11 24
+    400262: pCylinder11 25
+    400264: pCylinder11 26
+    400266: pCylinder11 27
+    400268: pCylinder11 3
+    400270: pCylinder11 4
+    400272: pCylinder11 5
+    400274: pCylinder11 6
+    400276: pCylinder11 7
+    400278: pCylinder11 8
+    400280: pCylinder11 9
+    400282: pCylinder12
+    400284: pCylinder12 1
+    400286: pCylinder12 10
+    400288: pCylinder12 11
+    400290: pCylinder12 12
+    400292: pCylinder12 13
+    400294: pCylinder12 14
+    400296: pCylinder12 15
+    400298: pCylinder12 16
+    400300: pCylinder12 17
+    400302: pCylinder12 18
+    400304: pCylinder12 19
+    400306: pCylinder12 2
+    400308: pCylinder12 20
+    400310: pCylinder12 21
+    400312: pCylinder12 22
+    400314: pCylinder12 23
+    400316: pCylinder12 24
+    400318: pCylinder12 25
+    400320: pCylinder12 26
+    400322: pCylinder12 27
+    400324: pCylinder12 3
+    400326: pCylinder12 4
+    400328: pCylinder12 5
+    400330: pCylinder12 6
+    400332: pCylinder12 7
+    400334: pCylinder12 8
+    400336: pCylinder12 9
+    400338: pCylinder13
+    400340: pCylinder13 1
+    400342: pCylinder13 10
+    400344: pCylinder13 11
+    400346: pCylinder13 12
+    400348: pCylinder13 13
+    400350: pCylinder13 14
+    400352: pCylinder13 15
+    400354: pCylinder13 16
+    400356: pCylinder13 17
+    400358: pCylinder13 18
+    400360: pCylinder13 19
+    400362: pCylinder13 2
+    400364: pCylinder13 20
+    400366: pCylinder13 21
+    400368: pCylinder13 22
+    400370: pCylinder13 23
+    400372: pCylinder13 24
+    400374: pCylinder13 25
+    400376: pCylinder13 26
+    400378: pCylinder13 27
+    400380: pCylinder13 3
+    400382: pCylinder13 4
+    400384: pCylinder13 5
+    400386: pCylinder13 6
+    400388: pCylinder13 7
+    400390: pCylinder13 8
+    400392: pCylinder13 9
+    400394: pCylinder2
+    400396: pCylinder3
+    400398: pCylinder4
+    400400: pCylinder5
+    400402: pCylinder6
+    400404: pCylinder7
+    400406: pCylinder8
+    400408: pCylinder9
+    400410: pPlane1
+    400412: pPlane1 1
+    400414: pPlane1 2
+    400416: pPlane1 3
+    400418: pPlane1 4
+    400420: pPlane1 5
+    400422: pSphere1
+    400424: pSphere2
+    400426: pSphere3
+    400428: right_elbow
+    400430: right_elbow 1
+    400432: right_elbow 2
+    400434: right_elbow 3
+    400436: right_elbow 4
+    400438: right_elbow 5
+    400440: right_elbow 6
+    400442: right_elbow 7
+    400444: right_elbow 8
+    400446: right_elbow 9
+    400448: right_foot
+    400450: right_foot 1
+    400452: right_foot 2
+    400454: right_foot 3
+    400456: right_foot 4
+    400458: right_foot 5
+    400460: right_foot 6
+    400462: right_foot 7
+    400464: right_foot 8
+    400466: right_foot 9
+    400468: right_knee
+    400470: right_knee 1
+    400472: right_knee 2
+    400474: right_knee 3
+    400476: right_knee 4
+    400478: right_knee 5
+    400480: right_knee 6
+    400482: right_knee 7
+    400484: right_knee 8
+    400486: right_knee 9
+    400488: right_leg
+    400490: right_leg 1
+    400492: right_leg 2
+    400494: right_leg 3
+    400496: right_leg 4
+    400498: right_leg 5
+    400500: right_leg 6
+    400502: right_leg 7
+    400504: right_leg 8
+    400506: right_leg 9
+    400508: right_shoulder
+    400510: right_shoulder 1
+    400512: right_shoulder 2
+    400514: right_shoulder 3
+    400516: right_shoulder 4
+    400518: right_shoulder 5
+    400520: right_shoulder 6
+    400522: right_shoulder 7
+    400524: right_shoulder 8
+    400526: right_shoulder 9
+    400528: right_wrist
+    400530: right_wrist 1
+    400532: right_wrist 2
+    400534: right_wrist 3
+    400536: right_wrist 4
+    400538: right_wrist 5
+    400540: right_wrist 6
+    400542: right_wrist 7
+    400544: right_wrist 8
+    400546: right_wrist 9
+    400548: road
+    400550: road1
+    400552: rocket
+    400554: //RootNode
+    400556: spectators1:back
+    400558: spectators1:back 1
+    400560: spectators1:back 2
+    400562: spectators1:back 3
+    400564: spectators1:group1
+    400566: spectators1:group2
+    400568: spectators1:group3
+    400570: spectators1:group4
+    400572: spectators1:head
+    400574: spectators1:head 1
+    400576: spectators1:head 2
+    400578: spectators1:head 3
+    400580: spectators1:hips
+    400582: spectators1:hips 1
+    400584: spectators1:hips1
+    400586: spectators1:hips2
+    400588: spectators1:left_elbow
+    400590: spectators1:left_elbow 1
+    400592: spectators1:left_elbow 2
+    400594: spectators1:left_elbow 3
+    400596: spectators1:left_foot
+    400598: spectators1:left_foot 1
+    400600: spectators1:left_foot 2
+    400602: spectators1:left_foot 3
+    400604: spectators1:left_knee
+    400606: spectators1:left_knee 1
+    400608: spectators1:left_knee 2
+    400610: spectators1:left_knee 3
+    400612: spectators1:left_leg
+    400614: spectators1:left_leg 1
+    400616: spectators1:left_leg 2
+    400618: spectators1:left_leg 3
+    400620: spectators1:left_shoulder
+    400622: spectators1:left_shoulder 1
+    400624: spectators1:left_shoulder 2
+    400626: spectators1:left_shoulder 3
+    400628: spectators1:left_wrist
+    400630: spectators1:left_wrist 1
+    400632: spectators1:left_wrist 2
+    400634: spectators1:left_wrist 3
+    400636: spectators1:man
+    400638: spectators1:man 1
+    400640: spectators1:man 2
+    400642: spectators1:pPlane1
+    400644: spectators1:pPlane1 1
+    400646: spectators1:pPlane1 2
+    400648: spectators1:right_elbow
+    400650: spectators1:right_elbow 1
+    400652: spectators1:right_elbow 2
+    400654: spectators1:right_elbow 3
+    400656: spectators1:right_foot
+    400658: spectators1:right_foot 1
+    400660: spectators1:right_foot 2
+    400662: spectators1:right_foot 3
+    400664: spectators1:right_knee
+    400666: spectators1:right_knee 1
+    400668: spectators1:right_knee 2
+    400670: spectators1:right_knee 3
+    400672: spectators1:right_leg
+    400674: spectators1:right_leg 1
+    400676: spectators1:right_leg 2
+    400678: spectators1:right_leg 3
+    400680: spectators1:right_shoulder
+    400682: spectators1:right_shoulder 1
+    400684: spectators1:right_shoulder 2
+    400686: spectators1:right_shoulder 3
+    400688: spectators1:right_wrist
+    400690: spectators1:right_wrist 1
+    400692: spectators1:right_wrist 2
+    400694: spectators1:right_wrist 3
+    400696: star
+    400698: star1
+    400700: star10
+    400702: star11
+    400704: star12
+    400706: star13
+    400708: star14
+    400710: star15
+    400712: star16
+    400714: star17
+    400716: star18
+    400718: star19
+    400720: star2
+    400722: star20
+    400724: star21
+    400726: star22
+    400728: star23
+    400730: star24
+    400732: star25
+    400734: star26
+    400736: star27
+    400738: star3
+    400740: star4
+    400742: star5
+    400744: star6
+    400746: star7
+    400748: star8
+    400750: star9
+    400752: transform1
+    400754: transform10
+    400756: transform100
+    400758: transform101
+    400760: transform102
+    400762: transform103
+    400764: transform104
+    400766: transform105
+    400768: transform106
+    400770: transform11
+    400772: transform12
+    400774: transform13
+    400776: transform14
+    400778: transform15
+    400780: transform16
+    400782: transform17
+    400784: transform18
+    400786: transform19
+    400788: transform2
+    400790: transform20
+    400792: transform21
+    400794: transform22
+    400796: transform23
+    400798: transform24
+    400800: transform25
+    400802: transform26
+    400804: transform27
+    400806: transform28
+    400808: transform29
+    400810: transform3
+    400812: transform30
+    400814: transform31
+    400816: transform32
+    400818: transform33
+    400820: transform34
+    400822: transform35
+    400824: transform36
+    400826: transform37
+    400828: transform38
+    400830: transform39
+    400832: transform4
+    400834: transform40
+    400836: transform41
+    400838: transform42
+    400840: transform43
+    400842: transform44
+    400844: transform45
+    400846: transform46
+    400848: transform47
+    400850: transform48
+    400852: transform49
+    400854: transform5
+    400856: transform50
+    400858: transform51
+    400860: transform52
+    400862: transform53
+    400864: transform54
+    400866: transform55
+    400868: transform56
+    400870: transform57
+    400872: transform58
+    400874: transform59
+    400876: transform6
+    400878: transform60
+    400880: transform61
+    400882: transform62
+    400884: transform63
+    400886: transform64
+    400888: transform65
+    400890: transform66
+    400892: transform67
+    400894: transform68
+    400896: transform69
+    400898: transform7
+    400900: transform70
+    400902: transform71
+    400904: transform72
+    400906: transform73
+    400908: transform74
+    400910: transform75
+    400912: transform76
+    400914: transform77
+    400916: transform78
+    400918: transform79
+    400920: transform8
+    400922: transform80
+    400924: transform81
+    400926: transform82
+    400928: transform83
+    400930: transform84
+    400932: transform85
+    400934: transform86
+    400936: transform87
+    400938: transform88
+    400940: transform89
+    400942: transform9
+    400944: transform90
+    400946: transform91
+    400948: transform92
+    400950: transform93
+    400952: transform94
+    400954: transform95
+    400956: transform96
+    400958: transform97
+    400960: transform98
+    400962: transform99
+    400964: pCylinder1 1
+    400966: pCylinder11 28
+    400968: pCylinder11 29
+    400970: pCylinder11 30
+    400972: pCylinder11 31
+    400974: pCylinder11 32
+    400976: pCylinder11 33
+    400978: pCylinder11 34
+    400980: pCylinder11 35
+    400982: pCylinder12 28
+    400984: pCylinder12 29
+    400986: pCylinder12 30
+    400988: pCylinder12 31
+    400990: pCylinder12 32
+    400992: pCylinder12 33
+    400994: pCylinder12 34
+    400996: pCylinder12 35
+    400998: pCylinder13 28
+    401000: pCylinder13 29
+    401002: pCylinder13 30
+    401004: pCylinder13 31
+    401006: pCylinder13 32
+    401008: pCylinder13 33
+    401010: pCylinder13 34
+    401012: pCylinder13 35
+    401014: pCylinder14
+    401016: pCylinder15
+    401018: pCylinder16
+    401020: pCylinder17
+    401022: pCylinder18
+    401024: pCylinder19
+    401026: pCylinder20
+    401028: pCylinder21
+    401030: pCylinder22
+    401032: pCylinder23
+    401034: pCylinder24
+    401036: pCylinder25
+    401038: pSphere4
+    401040: star28
+    401042: star29
+    401044: star30
+    401046: star31
+    401048: star32
+    401050: star33
+    401052: star34
+    401054: star35
+    401056: transform107
+    401058: transform108
+    401060: transform109
+    401062: transform110
+    401064: transform111
+    401066: transform112
+    401068: transform113
+    401070: transform114
+    401072: transform115
+    401074: transform116
+    401076: transform117
+    401078: transform118
+    401080: transform119
+    401082: transform120
+    401084: transform121
+    401086: transform122
+    401088: transform123
+    401090: transform124
+    401092: transform125
+    401094: transform126
+    401096: transform127
+    401098: transform128
+    401100: transform129
+    401102: transform130
+    401104: transform131
+    401106: transform132
+    401108: transform133
+    401110: transform134
+    401112: transform135
+    401114: transform136
+    401116: transform137
+    401118: transform138
+    401120: transform139
+    401122: transform140
+    401124: transform141
+    401126: transform142
+    401128: transform143
+    401130: transform144
+    401132: transform145
+    401134: transform146
+    401136: transform147
+    401138: transform148
+    401140: transform149
+    401142: transform150
+    401144: transform151
+    401146: transform152
+    401148: transform153
+    401150: transform154
+    401152: transform155
+    401154: transform156
+    401156: transform157
+    401158: transform158
+    401160: transform159
+    2300000: man
+    2300002: man 1
+    2300004: man 2
+    2300006: man 3
+    2300008: man 4
+    2300010: man 5
+    2300012: pPlane1
+    2300014: pPlane1 1
+    2300016: pPlane1 2
+    2300018: pPlane1 3
+    2300020: pPlane1 4
+    2300022: pPlane1 5
+    2300024: road1
+    2300026: spectators1:man
+    2300028: spectators1:man 1
+    2300030: spectators1:man 2
+    2300032: spectators1:pPlane1
+    2300034: spectators1:pPlane1 1
+    2300036: spectators1:pPlane1 2
+    2300038: pCylinder1
+    3300000: man
+    3300002: man 1
+    3300004: man 2
+    3300006: man 3
+    3300008: man 4
+    3300010: man 5
+    3300012: pPlane1
+    3300014: pPlane1 1
+    3300016: pPlane1 2
+    3300018: pPlane1 3
+    3300020: pPlane1 4
+    3300022: pPlane1 5
+    3300024: road1
+    3300026: spectators1:man
+    3300028: spectators1:man 1
+    3300030: spectators1:man 2
+    3300032: spectators1:pPlane1
+    3300034: spectators1:pPlane1 1
+    3300036: spectators1:pPlane1 2
+    3300038: pCylinder1
+    4300000: spectators1:man
+    4300002: spectators1:pPlane1
+    4300004: spectators1:man
+    4300006: spectators1:pPlane1
+    4300008: spectators1:man
+    4300010: spectators1:pPlane1
+    4300012: man
+    4300014: pPlane1
+    4300016: man
+    4300018: pPlane1
+    4300020: man
+    4300022: pPlane1
+    4300024: man
+    4300026: pPlane1
+    4300028: man
+    4300030: pPlane1
+    4300032: man
+    4300034: pPlane1
+    4300036: road1
+    4300038: pCylinder1
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

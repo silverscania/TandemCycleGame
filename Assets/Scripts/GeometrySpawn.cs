@@ -19,14 +19,15 @@ public class GeometrySpawn : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		Debug.Log (other.name);
+		//Debug.Log (other.name);
+		if(other.name .Equals("Main Camera")) {
+			collider.enabled = false;
+			//Debug.Log("hey");
+			Instantiate(prefabToCreate, transform.parent.transform.position + offset, Quaternion.identity);
 
-		collider.enabled = false;
-		//Debug.Log("hey");
-		Instantiate(prefabToCreate, transform.parent.transform.position + offset, Quaternion.identity);
-
-		spawnChickens();
-		spawnAi();
+			spawnChickens();
+			spawnAi();
+		}
 	}
 
 	void spawnChickens() {

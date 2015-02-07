@@ -23,7 +23,7 @@ public class ChickenController : MonoBehaviour {
 
 	//make sound on collision
 	void OnCollisionEnter(Collision collision) {
-		Debug.Log(collision.relativeVelocity.sqrMagnitude);
+		//Debug.Log(collision.relativeVelocity.sqrMagnitude);
 		if( collision.relativeVelocity.sqrMagnitude > 20) {
 			collider.enabled = false;
 			collisionTime = Time.time;
@@ -34,7 +34,7 @@ public class ChickenController : MonoBehaviour {
 
 			//rigidbody.constraints = RigidbodyConstraints.None;
 			//rigidbody.AddExplosionForce(100.0f, collision.transform.position, 5.0f);
-			rigidbody.AddForce(new Vector3(-20, 150, 0));
+			rigidbody.AddForce(new Vector3(-80, 100, 0));
 		}
 	}
 }
