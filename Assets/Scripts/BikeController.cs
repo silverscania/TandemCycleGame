@@ -8,6 +8,8 @@ public class BikeController : MonoBehaviour {
 	public WheelCollider frontWheel1, frontWheel2, backWheel1, backWheel2;
 	public Rigidbody frame, balanceWeight;
 	public GameObject mark;
+	public AudioSource audioSourceClick;
+	public AudioSource audioSourcePedal;
 	public float maxSpeed = 50.0f;
 	public float steerSpeed = 10.0f;
 	public float maxSteerAngle = 10.0f;
@@ -15,6 +17,8 @@ public class BikeController : MonoBehaviour {
 	public float brakeAmount = 20; // How hard to brake when not moving controls
 	public float brakeThreshold = 1; // How long time before we brake when not giving proper input
 	public float speedModifier = 0.1f; // 0-1
+
+	public bool alive = true;
 
 	// Joy input
 
@@ -113,6 +117,8 @@ public class BikeController : MonoBehaviour {
 			setTorqueAndBrakeFront(0, brakeAmount);
 		}
 
+		playBikeSounds ();
+
 		// remember latest angles
 		lastAngleRight = currentAngleRight;
 		lastAngleLeft = currentAngleLeft;
@@ -155,10 +161,31 @@ public class BikeController : MonoBehaviour {
 		}
 	}
 
+	float audioClickTime = 2;
+	private void playBikeSounds(){
+		// Wheel click
+		if (audioClickTime <= 0) {
+			audioClickTime = 2;
+			audioSourceClick.Play();
+		}
+		audioClickTime -= frame.velocity.magnitude / 10;
+
+		// Pedal whoosh
+//		if (currentAngleLeft == 90 && lastAngleLeft != currentAngleLeft) {
+//			audioSourcePedal.Play();
+//		}
+//
+//		if (currentAngleRight == 90 && lastAngleRight != currentAngleRight) {
+//			audioSourcePedal.Play();
+//		}
+	}
+
 	void OnGUI(){
-		if(!playerTwo)
-		//	GUI.Label (new Rect (0, Screen.height / 2, Screen.width, Screen.height), "Angle: " + frame.transform.eulerAngles.y);
-		GUI.Label (new Rect (0, Screen.height / 2, Screen.width, Screen.height), "DeltaAngleLeft: " + deltaAngleLeft + "\nDeltaAngleRight: " + deltaAngleRight + "\nLastGoodUpdate: " + lastGoodUpdate + "\nTime: " + (Time.time - lastGoodUpdate));
+		if (!playerTwo) {
+			//	GUI.Label (new Rect (0, Screen.height / 2, Screen.width, Screen.height), "Angle: " + frame.transform.eulerAngles.y);
+			//GUI.Label (new Rect (0, Screen.height / 2, Screen.width, Screen.height), "DeltaAngleLeft: " + deltaAngleLeft + "\nDeltaAngleRight: " + deltaAngleRight + "\nLastGoodUpdate: " + lastGoodUpdate + "\nTime: " + (Time.time - lastGoodUpdate));
+			GUI.Label (new Rect (0, Screen.height / 2, Screen.width, Screen.height), "Vel: " + frame.velocity.magnitude);
+		}
 	}
 
 	protected void setTorqueAndBrake(float torque, float brake) {
@@ -167,14 +194,22 @@ public class BikeController : MonoBehaviour {
 	}
 
 	protected void setTorqueAndBrakeFront(float torque, float brake) {
+		torque = Mathf.Clamp (torque, -maxSpeed, maxSpeed);
 		frontWheel1.motorTorque = frontWheel2.motorTorque = torque;
 		frontWheel1.brakeTorque = frontWheel2.brakeTorque = brake;
 	}
 
 	protected void setTorqueAndBrakeBack(float torque, float brake) {
+		torque = Mathf.Clamp (torque, -maxSpeed, maxSpeed);
 		backWheel1.motorTorque = backWheel2.motorTorque = torque/2;
 		backWheel1.brakeTorque = backWheel2.brakeTorque = brake;
 	}
+
+	public void brakeToStop(){
+		setTorqueAndBrakeBack (0, brakeAmount / 5);
+		setTorqueAndBrakeFront (0, brakeAmount / 5);
+	}
+
 }
 
 
