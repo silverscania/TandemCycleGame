@@ -62,6 +62,10 @@ public class GameLord : MonoBehaviour {
 		if (Input.GetButtonUp ("Fire1") && gameOver) {
 			Application.LoadLevel("main 4");
 		}
+
+		if (Input.GetButtonUp ("Cancel")) {
+			Application.Quit();
+		}
 	}
 
 	private void count(){

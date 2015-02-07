@@ -19,6 +19,7 @@ public class BikeController : MonoBehaviour {
 	public float brakeThreshold = 1; // How long time before we brake when not giving proper input
 	public float speedModifier = 0.1f; // 0-1
 
+	public bool auto = false;
 	public bool alive = true;
 
 	// Joy input
@@ -169,6 +170,11 @@ public class BikeController : MonoBehaviour {
 			setTorqueAndBrakeFront(5, 0);
 			setTorqueAndBrakeBack(5, 0);
 		}
+
+		if (auto) {
+			setTorqueAndBrakeFront(3, 0);
+			setTorqueAndBrakeBack(3, 0);
+		}
 	}
 
 	float audioClickTime = 2;
@@ -194,7 +200,7 @@ public class BikeController : MonoBehaviour {
 		if (!playerTwo) {
 			//	GUI.Label (new Rect (0, Screen.height / 2, Screen.width, Screen.height), "Angle: " + frame.transform.eulerAngles.y);
 			//GUI.Label (new Rect (0, Screen.height / 2, Screen.width, Screen.height), "DeltaAngleLeft: " + deltaAngleLeft + "\nDeltaAngleRight: " + deltaAngleRight + "\nLastGoodUpdate: " + lastGoodUpdate + "\nTime: " + (Time.time - lastGoodUpdate));
-			GUI.Label (new Rect (0, Screen.height / 2, Screen.width, Screen.height), "Vel: " + frame.velocity.magnitude);
+			//GUI.Label (new Rect (0, Screen.height / 2, Screen.width, Screen.height), "Vel: " + frame.velocity.magnitude);
 		}
 	}
 
