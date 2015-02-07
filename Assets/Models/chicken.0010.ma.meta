@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: 380686092a0dfe749a376690e6fa890b
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: body_CTRL
+    100002: body_JNT
+    100004: bodyGeo_GRP
+    100006: //RootNode
+    100008: feet_CTRL
+    100010: foot_JNT
+    100012: head_CTRL
+    100014: head_JNT
+    100016: headGeo_GRP
+    100018: hips_JNT
+    100020: L_shoulder_JNT
+    100022: L_wing_CTRL
+    100024: L_wing_JNT
+    100026: neck_JNT
+    100028: R_shoulder_JNT
+    100030: R_wing_CTRL
+    100032: R_wing_JNT
+    100034: skeleton
+    100036: tail_CTRL
+    100038: tail_JNT
+    100040: tmButton1
+    100042: tmButton2
+    100044: tmButton3
+    100046: tmButton4
+    100048: tmButton5
+    100050: tmButton6
+    100052: tmButton7
+    100054: tmButtonRGB1
+    100056: tmButtonRGB2
+    100058: tmButtonRGB3
+    100060: tmButtonRGB4
+    100062: tmButtonRGB5
+    100064: tmButtonRGB6
+    100066: tmButtonRGB7
+    100068: tmButtons1
+    100070: tmButtonValue1
+    100072: tmButtonValue2
+    100074: tmButtonValue3
+    100076: tmButtonValue4
+    100078: tmButtonValue5
+    100080: tmButtonValue6
+    100082: tmButtonValue7
+    100084: tmButtonVis1
+    100086: tmGroups1
+    100088: tmOptions1
+    100090: tmSliderVis1
+    100092: tmXML1
+    100094: transform1
+    400000: body_CTRL
+    400002: body_JNT
+    400004: bodyGeo_GRP
+    400006: //RootNode
+    400008: feet_CTRL
+    400010: foot_JNT
+    400012: head_CTRL
+    400014: head_JNT
+    400016: headGeo_GRP
+    400018: hips_JNT
+    400020: L_shoulder_JNT
+    400022: L_wing_CTRL
+    400024: L_wing_JNT
+    400026: neck_JNT
+    400028: R_shoulder_JNT
+    400030: R_wing_CTRL
+    400032: R_wing_JNT
+    400034: skeleton
+    400036: tail_CTRL
+    400038: tail_JNT
+    400040: tmButton1
+    400042: tmButton2
+    400044: tmButton3
+    400046: tmButton4
+    400048: tmButton5
+    400050: tmButton6
+    400052: tmButton7
+    400054: tmButtonRGB1
+    400056: tmButtonRGB2
+    400058: tmButtonRGB3
+    400060: tmButtonRGB4
+    400062: tmButtonRGB5
+    400064: tmButtonRGB6
+    400066: tmButtonRGB7
+    400068: tmButtons1
+    400070: tmButtonValue1
+    400072: tmButtonValue2
+    400074: tmButtonValue3
+    400076: tmButtonValue4
+    400078: tmButtonValue5
+    400080: tmButtonValue6
+    400082: tmButtonValue7
+    400084: tmButtonVis1
+    400086: tmGroups1
+    400088: tmOptions1
+    400090: tmSliderVis1
+    400092: tmXML1
+    400094: transform1
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

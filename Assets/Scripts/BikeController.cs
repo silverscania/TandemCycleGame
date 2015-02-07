@@ -10,6 +10,15 @@ public class BikeController : MonoBehaviour {
 	public float steerSpeed = 10.0f;
 	public float maxSteerAngle = 10.0f;
 
+	// Joy input
+	private float lastAngleRight;    // Angle at the last update
+	private float deltaAngleRight;
+	private float currentAngleRight;
+
+	private float lastAngleLeft;    // Angle at the last update
+	private float deltaAngleLeft;
+	private float currentAngleLeft;
+
 	// Use this for initialization
 	void Start () {
 		mark = GameObject.Find("Mark");
@@ -70,10 +79,47 @@ public class BikeController : MonoBehaviour {
 		//balanceWeight.hingeJoint.spring = hingeSpring;
 
 		frontWheel.steerAngle = Mathf.Clamp(frontWheel.steerAngle, -maxSteerAngle, maxSteerAngle);
+
+
+		// Joystick input
+		Vector3 rotationLeft = new Vector3 (0, Mathf.Atan2 (Input.GetAxis ("LeftVertical"), Input.GetAxis ("LeftHorizontal")) * -180 / Mathf.PI, 0);
+		Vector3 rotationRight = new Vector3 (0, Mathf.Atan2 (Input.GetAxis ("RightVertical"), Input.GetAxis ("RightHorizontal")) * -180 / Mathf.PI, 0);
+
+		currentAngleLeft = rotationLeft.y;
+		currentAngleRight = rotationRight.y;
+
+//		if (Mathf.RoundToInt (currentAngleLeft) != Mathf.RoundToInt (lastAngleLeft)) {
+//
+//			// only do something if current and last angle er either both positive or both negative
+//			if ((currentAngle < 0 && lastAngle < 0) ||
+//			    (currentAngle > 0 && lastAngle > 0) ) {
+//
+//				deltaAngle = lastAngle - currentAngle;
+//				//rotateAmount += deltaAngle;
+//				setTorqueAndBrake(deltaAngle, 0);
+//			}
+//		}
+//		lastAngle = currentAngle;
+	}
+
+	void OnGUI(){
+		//GUI.Label (new Rect (0, Screen.height / 2, Screen.width, Screen.height), "Angle: " + currentAngle + " Delta: " + deltaAngle + "\nAmount: " + rotateAmount);
 	}
 
 	void setTorqueAndBrake(float torque, float brake) {
 		backWheel1.motorTorque = backWheel2.motorTorque = torque;
 		backWheel1.brakeTorque = backWheel2.brakeTorque = brake;
 	}
+
+	void setTorqueAndBrakeFront(float torque, float brake) {
+		frontWheel.motorTorque = torque;
+		frontWheel.brakeTorque = brake;
+	}
+
+	void setTorqueAndBrakeBack(float torque, float brake) {
+		backWheel1.motorTorque = backWheel2.motorTorque = torque;
+		backWheel1.brakeTorque = backWheel2.brakeTorque = brake;
+	}
 }
+
+
