@@ -48,7 +48,7 @@ public class BikeController : MonoBehaviour {
 		float speed = frame.rigidbody.velocity.magnitude;
 
 		if(frame.transform.position.y < -5) {
-			Destroy(gameObject);
+			frame.gameObject.SetActive(false);
 			return;
 		}
 
