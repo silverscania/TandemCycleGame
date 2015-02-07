@@ -105,6 +105,12 @@ public class BikeController : MonoBehaviour {
 			deltaAngleLeft = 0;
 		}
 
+		//clamp speed
+		if(speed > maxSpeed) {
+			setTorqueAndBrakeBack(0,0);
+			setTorqueAndBrakeFront(0,0);
+		}
+
 		// is this a 'good update', i.e. both players moving and moving in the same direction
 		if (deltaAngleLeft < 0 && deltaAngleRight < 0) {
 			lastGoodUpdate = Time.time;
@@ -164,7 +170,7 @@ public class BikeController : MonoBehaviour {
 	float audioClickTime = 2;
 	private void playBikeSounds(){
 		// Wheel click
-		if (audioClickTime <= 0) {
+		if (audioSourceClick && audioClickTime <= 0) {
 			audioClickTime = 2;
 			audioSourceClick.Play();
 		}

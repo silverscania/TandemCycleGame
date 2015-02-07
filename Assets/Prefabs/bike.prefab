@@ -1926,13 +1926,16 @@ MonoBehaviour:
   frame: {fileID: 5400002}
   balanceWeight: {fileID: 0}
   mark: {fileID: 0}
-  maxSpeed: 20
+  audioSourceClick: {fileID: 0}
+  audioSourcePedal: {fileID: 0}
+  maxSpeed: 4.5
   steerSpeed: 10
   maxSteerAngle: 20
   straightAmount: 0
   brakeAmount: 20
   brakeThreshold: 1
   speedModifier: .100000001
+  alive: 1
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
