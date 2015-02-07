@@ -5,6 +5,7 @@ public class GeometrySpawn : MonoBehaviour {
 
 	public Transform prefabToCreate;
 	public Transform[] chicken;
+	public Transform ai;
 	public Vector3 offset = new Vector3(20, 0, 0);
 
 	// Use this for initialization
@@ -24,6 +25,11 @@ public class GeometrySpawn : MonoBehaviour {
 		//Debug.Log("hey");
 		Instantiate(prefabToCreate, transform.parent.transform.position + offset, Quaternion.identity);
 
+		spawnChickens();
+		spawnAi();
+	}
+
+	void spawnChickens() {
 		//Spawn random chicken flocks
 		int numFlocks = Random.Range(1, 2);
 		for(int flock = 0; flock < numFlocks; ++flock){
@@ -31,12 +37,28 @@ public class GeometrySpawn : MonoBehaviour {
 				Random.Range(-80, 0),
 				4.5f,
 				Random.Range(-10, 10));
-
+			
 			Instantiate(chicken[(int)Random.Range(0, chicken.Length)], 
-		            transform.parent.transform.position + 
-		            offset + 
-			        flockLoc,
-		            Quaternion.Euler(new Vector3(0, Random.Range(0, 180), 0)));
+			            transform.parent.transform.position + 
+			            offset + 
+			            flockLoc,
+			            Quaternion.Euler(new Vector3(0, Random.Range(0, 180), 0)));
+		}
+	}
+
+	void spawnAi() {
+		int numAi = Random.Range(0,2);
+		for(int i = 0; i < numAi; ++i) {
+			Vector3 flockLoc = new Vector3(
+				Random.Range(-80, 0),
+				0.9f,
+				Random.Range(-1, 5));
+			
+			Instantiate(ai, 
+			            transform.parent.transform.position + 
+			            offset + 
+			            flockLoc,
+			            Quaternion.Euler(0, 270, 0));
 		}
 	}
 }

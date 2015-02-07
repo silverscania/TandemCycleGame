@@ -43,6 +43,11 @@ public class BikeController : MonoBehaviour {
 	void Update () {
 		float speed = frame.rigidbody.velocity.magnitude;
 
+		if(frame.transform.position.y < -5) {
+			Destroy(gameObject);
+			return;
+		}
+
 		//JointSpring hingeSpring = balanceWeight.hingeJoint.spring;
 		if(Input.GetKey(KeyCode.A)) {
 			frontWheel1.steerAngle += -steerSpeed*Time.deltaTime;
@@ -103,7 +108,7 @@ public class BikeController : MonoBehaviour {
 
 		// Brake if players don't know how to ride a tandem bike
 		if ((Time.time - lastGoodUpdate) > brakeThreshold) {
-			Debug.Log ("BRAKE!!! " + (Time.time - lastGoodUpdate));
+			//Debug.Log ("BRAKE!!! " + (Time.time - lastGoodUpdate));
 			setTorqueAndBrakeBack(0, brakeAmount);
 			setTorqueAndBrakeFront(0, brakeAmount);
 		}
@@ -156,17 +161,17 @@ public class BikeController : MonoBehaviour {
 		GUI.Label (new Rect (0, Screen.height / 2, Screen.width, Screen.height), "DeltaAngleLeft: " + deltaAngleLeft + "\nDeltaAngleRight: " + deltaAngleRight + "\nLastGoodUpdate: " + lastGoodUpdate + "\nTime: " + (Time.time - lastGoodUpdate));
 	}
 
-	void setTorqueAndBrake(float torque, float brake) {
+	protected void setTorqueAndBrake(float torque, float brake) {
 		backWheel1.motorTorque = backWheel2.motorTorque = torque;
 		backWheel1.brakeTorque = backWheel2.brakeTorque = brake;
 	}
 
-	void setTorqueAndBrakeFront(float torque, float brake) {
+	protected void setTorqueAndBrakeFront(float torque, float brake) {
 		frontWheel1.motorTorque = frontWheel2.motorTorque = torque;
 		frontWheel1.brakeTorque = frontWheel2.brakeTorque = brake;
 	}
 
-	void setTorqueAndBrakeBack(float torque, float brake) {
+	protected void setTorqueAndBrakeBack(float torque, float brake) {
 		backWheel1.motorTorque = backWheel2.motorTorque = torque/2;
 		backWheel1.brakeTorque = backWheel2.brakeTorque = brake;
 	}
