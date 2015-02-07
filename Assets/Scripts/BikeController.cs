@@ -5,7 +5,7 @@ public class BikeController : MonoBehaviour {
 
 	public bool playerTwo;
 
-	public WheelCollider frontWheel, backWheel1, backWheel2;
+	public WheelCollider frontWheel1, frontWheel2, backWheel1, backWheel2;
 	public Rigidbody frame, balanceWeight;
 	public GameObject mark;
 	public float maxSpeed = 50.0f;
@@ -41,18 +41,21 @@ public class BikeController : MonoBehaviour {
 
 		//JointSpring hingeSpring = balanceWeight.hingeJoint.spring;
 		if(Input.GetKey(KeyCode.A)) {
-			frontWheel.steerAngle += -steerSpeed*Time.deltaTime;
+			frontWheel1.steerAngle += -steerSpeed*Time.deltaTime;
+			frontWheel2.steerAngle = frontWheel1.steerAngle;
 			//hingeSpring.targetPosition = 10;
 		}
 		else if(Input.GetKey(KeyCode.D)) {
-			frontWheel.steerAngle += steerSpeed*Time.deltaTime;
+			frontWheel1.steerAngle += steerSpeed*Time.deltaTime;
+			frontWheel2.steerAngle = frontWheel1.steerAngle;
 			//hingeSpring.targetPosition = 10;
 		}
 		else {
-			frontWheel.steerAngle *= 0.8f; //TODO: not linked to Time.delta
+			frontWheel1.steerAngle *= 0.8f; //TODO: not linked to Time.delta
+			frontWheel2.steerAngle = frontWheel1.steerAngle;
 		//	hingeSpring.targetPosition = 0;
 		}
-
+		
 		// Joystick input
 		Vector3 rotationLeft = new Vector3 (0, Mathf.Atan2 (Input.GetAxis (playerName + "LeftVertical"), Input.GetAxis (playerName + "LeftHorizontal")) * -180 / Mathf.PI, 0);
 		Vector3 rotationRight = new Vector3 (0, Mathf.Atan2 (Input.GetAxis (playerName + "RightVertical"), Input.GetAxis (playerName + "RightHorizontal")) * -180 / Mathf.PI, 0);
@@ -96,30 +99,38 @@ public class BikeController : MonoBehaviour {
 		// RIGHT TRIGGER
 		float rightTrigger = Input.GetAxis (playerName + "RightTrigger");
 		if (rightTrigger != 0) {
-			frontWheel.steerAngle += steerSpeed*Time.deltaTime * rightTrigger;
+			frontWheel1.steerAngle += steerSpeed*Time.deltaTime * rightTrigger;
+			frontWheel2.steerAngle = frontWheel1.steerAngle;
 		}
 
 		// LEFT TRIGGER
 		float leftTrigger = Input.GetAxis (playerName + "LeftTrigger");
 		if (leftTrigger != 0) {
-			frontWheel.steerAngle -= steerSpeed*Time.deltaTime * leftTrigger;	
+			frontWheel1.steerAngle -= steerSpeed*Time.deltaTime * leftTrigger;
+			frontWheel2.steerAngle = frontWheel1.steerAngle;
 		}
 
-		frontWheel.steerAngle = Mathf.Clamp(frontWheel.steerAngle, -maxSteerAngle, maxSteerAngle);
-
+		frontWheel1.steerAngle = Mathf.Clamp(frontWheel1.steerAngle, -maxSteerAngle, maxSteerAngle);
+		frontWheel2.steerAngle = frontWheel1.steerAngle;
 
 		// gradually straighten up the bike
 		if (leftTrigger == 0 && rightTrigger == 0) {
 			// Going right
 			if (frame.transform.eulerAngles.y > 270) {
-				frontWheel.steerAngle -= straightAmount * Time.deltaTime;
+				frontWheel1.steerAngle -= straightAmount * Time.deltaTime;
+				frontWheel2.steerAngle = frontWheel1.steerAngle;
 			}
 			// Going left
 			if (frame.transform.eulerAngles.y < 270) {
-				frontWheel.steerAngle += straightAmount * Time.deltaTime;
+				frontWheel1.steerAngle += straightAmount * Time.deltaTime;
+				frontWheel2.steerAngle = frontWheel1.steerAngle;
 			}
 		}
 
+		if(Input.GetKey(KeyCode.W)) {
+			setTorqueAndBrakeFront(5, 0);
+			setTorqueAndBrakeBack(5, 0);
+		}
 	}
 
 	void OnGUI(){
@@ -134,8 +145,8 @@ public class BikeController : MonoBehaviour {
 	}
 
 	void setTorqueAndBrakeFront(float torque, float brake) {
-		frontWheel.motorTorque = torque;
-		frontWheel.brakeTorque = brake;
+		frontWheel1.motorTorque = frontWheel2.motorTorque = torque;
+		frontWheel1.brakeTorque = frontWheel2.brakeTorque = brake;
 	}
 
 	void setTorqueAndBrakeBack(float torque, float brake) {
