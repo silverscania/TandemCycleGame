@@ -8279,8 +8279,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13ff2816257af024590f8af530cdcda2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target1: {fileID: 1130267829}
-  target2: {fileID: 1130267829}
+  target1: {fileID: 231568620}
+  target2: {fileID: 231568620}
   offset: {x: 0, y: 0, z: 0}
   minZoom: 3.9000001
   maxZoom: 8.19999981
@@ -11755,6 +11755,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 0518c381712df224aad4465d97b3612a, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0518c381712df224aad4465d97b3612a, type: 2}
   m_RootGameObject: {fileID: 1731934574}
@@ -13844,7 +13848,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1731934575
 Transform:
   m_ObjectHideFlags: 0
