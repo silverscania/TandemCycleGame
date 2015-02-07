@@ -8,7 +8,7 @@ public class GeometrySpawn : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		collider.enabled = true;
 	}
 	
 	// Update is called once per frame
@@ -17,7 +17,10 @@ public class GeometrySpawn : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		Debug.Log("hey");
+		Debug.Log (other.name);
+
+		collider.enabled = false;
+		//Debug.Log("hey");
 		Instantiate(prefabToCreate, transform.parent.transform.position + offset, Quaternion.identity);
 	}
 }
