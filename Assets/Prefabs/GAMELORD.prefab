@@ -548,6 +548,8 @@ MonoBehaviour:
   endText: {fileID: 177400}
   winnerName: {fileID: 10284548}
   countDown: {fileID: 10277402}
+  countSound: {fileID: 8300000, guid: 7d2ece67decd0644081dd91a1a81af51, type: 3}
+  goSound: {fileID: 8300000, guid: 103b7c5e38ae93b4093c6b0f8146c360, type: 3}
   winDistance: 35
   gameOver: 0
 --- !u!124 &12484548

@@ -21,7 +21,7 @@ public class MusicPlayer : MonoBehaviour {
 	void Update () {
 		fastestVelocity = Mathf.Max (teamOne.frame.velocity.magnitude, teamTwo.frame.velocity.magnitude);
 		for (int n = 0 ; n < tracks.Length ; n++) {
-			if(fastestVelocity > (maxSpeed / tracks.Length) * (n)){
+			if(fastestVelocity > (maxSpeed / tracks.Length-1) * (n)){
 				//tracks[n].volume = 1;
 				if(n == 1){
 					tracks[n].volume = musicVolume;
@@ -29,7 +29,7 @@ public class MusicPlayer : MonoBehaviour {
 					tracks[n].volume = musicVolume;
 				}
 				if(n > 0) tracks[n-1].volume = 0;
-			} else {
+			} else if(n>0) {
 				tracks[n].volume = 0;
 			}
 		}
