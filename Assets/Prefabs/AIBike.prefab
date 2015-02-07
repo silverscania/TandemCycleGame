@@ -874,7 +874,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100102}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: -.707106829}
-  m_LocalPosition: {x: 1.50908983, y: -1.98579827e-17, z: 1.42691875}
+  m_LocalPosition: {x: -5.55403328, y: -3.8229277e-17, z: 2.74700952}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400084}
@@ -1919,8 +1919,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTwo: 0
-  frontWheel1: {fileID: 0}
-  frontWheel2: {fileID: 0}
+  frontWheel1: {fileID: 14600000}
+  frontWheel2: {fileID: 14600002}
   backWheel1: {fileID: 14600004}
   backWheel2: {fileID: 14600006}
   frame: {fileID: 5400004}
