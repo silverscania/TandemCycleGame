@@ -297,6 +297,7 @@ GameObject:
   - 4: {fileID: 400034}
   - 95: {fileID: 9500000}
   - 114: {fileID: 11400002}
+  - 65: {fileID: 6500010}
   m_Layer: 0
   m_Name: bike_01
   m_TagString: Untagged
@@ -1797,7 +1798,7 @@ BoxCollider:
   m_GameObject: {fileID: 100002}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1821,7 +1822,7 @@ BoxCollider:
   m_GameObject: {fileID: 100014}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1833,7 +1834,7 @@ BoxCollider:
   m_GameObject: {fileID: 100022}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1845,9 +1846,21 @@ BoxCollider:
   m_GameObject: {fileID: 100024}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &6500010
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100034}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 3.07999992, y: 4.55999994, z: 6.07999992}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &9500000
 Animator:
@@ -1917,6 +1930,8 @@ MonoBehaviour:
   steerSpeed: 10
   maxSteerAngle: 20
   straightAmount: 0
+  brakeAmount: 20
+  brakeThreshold: 1
   speedModifier: .100000001
 --- !u!114 &11400002
 MonoBehaviour:
@@ -1935,7 +1950,7 @@ MonoBehaviour:
   xRotateyBits:
   - {fileID: 400026}
   - {fileID: 400024}
-  backWheel: {fileID: 0}
+  backWheel: {fileID: 14600000}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
