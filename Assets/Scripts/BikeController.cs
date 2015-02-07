@@ -12,6 +12,8 @@ public class BikeController : MonoBehaviour {
 	public float steerSpeed = 10.0f;
 	public float maxSteerAngle = 10.0f;
 	public float straightAmount; // how quickly the bikes straighten up
+	public float brakeAmount = 20; // How hard to brake when not moving controls
+	public float brakeThreshold = 1; // How long time before we brake when not giving proper input
 	public float speedModifier = 0.1f; // 0-1
 
 	// Joy input
@@ -25,6 +27,8 @@ public class BikeController : MonoBehaviour {
 	private float currentAngleLeft;
 
 	private string playerName = "P1";
+
+	private float lastGoodUpdate; // point in time where we last moved forward (brake when it's been half a second or so)
 
 	// Use this for initialization
 	void Start () {
@@ -74,7 +78,8 @@ public class BikeController : MonoBehaviour {
 				setTorqueAndBrakeFront (-deltaAngleRight * speedModifier, 0);
 			}
 		} else {
-			setTorqueAndBrakeFront(0,2);
+			//setTorqueAndBrakeFront(0,brakeAmount);
+			deltaAngleRight = 0;
 		}
 
 		// LEFT STICK
@@ -87,9 +92,21 @@ public class BikeController : MonoBehaviour {
 			}
 		} else {
 			// slow down
-			setTorqueAndBrakeBack(0,2);
+			//setTorqueAndBrakeBack(0,brakeAmount);
+			deltaAngleLeft = 0;
 		}
 
+		// is this a 'good update', i.e. both players moving and moving in the same direction
+		if (deltaAngleLeft < 0 && deltaAngleRight < 0) {
+			lastGoodUpdate = Time.time;
+		}
+
+		// Brake if players don't know how to ride a tandem bike
+		if ((Time.time - lastGoodUpdate) > brakeThreshold) {
+			Debug.Log ("BRAKE!!! " + (Time.time - lastGoodUpdate));
+			setTorqueAndBrakeBack(0, brakeAmount);
+			setTorqueAndBrakeFront(0, brakeAmount);
+		}
 
 		// remember latest angles
 		lastAngleRight = currentAngleRight;
@@ -99,14 +116,14 @@ public class BikeController : MonoBehaviour {
 		// RIGHT TRIGGER
 		float rightTrigger = Input.GetAxis (playerName + "RightTrigger");
 		if (rightTrigger != 0) {
-			frontWheel1.steerAngle += steerSpeed*Time.deltaTime * rightTrigger;
+			frontWheel1.steerAngle += steerSpeed * Time.deltaTime * rightTrigger;
 			frontWheel2.steerAngle = frontWheel1.steerAngle;
 		}
 
 		// LEFT TRIGGER
 		float leftTrigger = Input.GetAxis (playerName + "LeftTrigger");
 		if (leftTrigger != 0) {
-			frontWheel1.steerAngle -= steerSpeed*Time.deltaTime * leftTrigger;
+			frontWheel1.steerAngle -= steerSpeed * Time.deltaTime * leftTrigger;
 			frontWheel2.steerAngle = frontWheel1.steerAngle;
 		}
 
@@ -134,9 +151,9 @@ public class BikeController : MonoBehaviour {
 	}
 
 	void OnGUI(){
-		//if(!playerTwo)
+		if(!playerTwo)
 		//	GUI.Label (new Rect (0, Screen.height / 2, Screen.width, Screen.height), "Angle: " + frame.transform.eulerAngles.y);
-		//GUI.Label (new Rect (0, Screen.height / 2, Screen.width, Screen.height), "Angle: " + currentAngle + " Delta: " + deltaAngle + "\nAmount: " + rotateAmount);
+		GUI.Label (new Rect (0, Screen.height / 2, Screen.width, Screen.height), "DeltaAngleLeft: " + deltaAngleLeft + "\nDeltaAngleRight: " + deltaAngleRight + "\nLastGoodUpdate: " + lastGoodUpdate + "\nTime: " + (Time.time - lastGoodUpdate));
 	}
 
 	void setTorqueAndBrake(float torque, float brake) {
