@@ -266,6 +266,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 400034}
   - 95: {fileID: 9500000}
+  - 114: {fileID: 11400000}
+  - 135: {fileID: 13500000}
   m_Layer: 0
   m_Name: chicken
   m_TagString: Untagged
@@ -1068,7 +1070,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38.6353416, y: .209155798, z: -2.1605072}
+  m_LocalPosition: {x: 1.3223269, y: .173943281, z: .835947394}
   m_LocalScale: {x: 33.1911163, y: 33.1911278, z: 33.1911278}
   m_Children:
   - {fileID: 400042}
@@ -1766,6 +1768,29 @@ Animator:
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8321b3e0991ef54188d7ef476ca26c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &13500000
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100034}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: .0199999996
+  m_Center: {x: 0, y: .0399999991, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
