@@ -156,7 +156,145 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 17
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body_CTRL
+        weight: 1
+      - path: body_CTRL/bodyGeo_GRP
+        weight: 1
+      - path: body_CTRL/bodyGeo_GRP/pCube1
+        weight: 1
+      - path: body_CTRL/bodyGeo_GRP/pCube7
+        weight: 1
+      - path: feet_CTRL
+        weight: 1
+      - path: feet_CTRL/feetGeo
+        weight: 1
+      - path: head_CTRL
+        weight: 1
+      - path: head_CTRL/headGeo_GRP
+        weight: 1
+      - path: head_CTRL/headGeo_GRP/headGeo
+        weight: 1
+      - path: head_CTRL/headGeo_GRP/headGeo1
+        weight: 1
+      - path: L_wing_CTRL
+        weight: 1
+      - path: L_wing_CTRL/L_wing
+        weight: 1
+      - path: R_wing_CTRL
+        weight: 1
+      - path: R_wing_CTRL/R_wing
+        weight: 1
+      - path: skeleton
+        weight: 1
+      - path: skeleton/transform1
+        weight: 1
+      - path: skeleton/transform1/body_JNT
+        weight: 1
+      - path: skeleton/transform1/body_JNT/hips_JNT
+        weight: 1
+      - path: skeleton/transform1/body_JNT/hips_JNT/foot_JNT
+        weight: 1
+      - path: skeleton/transform1/body_JNT/L_shoulder_JNT
+        weight: 1
+      - path: skeleton/transform1/body_JNT/L_shoulder_JNT/L_wing_JNT
+        weight: 1
+      - path: skeleton/transform1/body_JNT/neck_JNT
+        weight: 1
+      - path: skeleton/transform1/body_JNT/neck_JNT/head_JNT
+        weight: 1
+      - path: skeleton/transform1/body_JNT/R_shoulder_JNT
+        weight: 1
+      - path: skeleton/transform1/body_JNT/R_shoulder_JNT/R_wing_JNT
+        weight: 1
+      - path: skeleton/transform1/body_JNT/tail_JNT
+        weight: 1
+      - path: tail_CTRL
+        weight: 1
+      - path: tail_CTRL/tailGeo
+        weight: 1
+      - path: tmXML1
+        weight: 1
+      - path: tmXML1/tmGroups1
+        weight: 1
+      - path: tmXML1/tmOptions1
+        weight: 1
+      - path: tmXML1/tmOptions1/tmButtons1
+        weight: 1
+      - path: tmXML1/tmOptions1/tmButtons1/tmButton1
+        weight: 1
+      - path: tmXML1/tmOptions1/tmButtons1/tmButton1/tmButtonRGB1
+        weight: 1
+      - path: tmXML1/tmOptions1/tmButtons1/tmButton1/tmButtonValue1
+        weight: 1
+      - path: tmXML1/tmOptions1/tmButtons1/tmButton2
+        weight: 1
+      - path: tmXML1/tmOptions1/tmButtons1/tmButton2/tmButtonRGB2
+        weight: 1
+      - path: tmXML1/tmOptions1/tmButtons1/tmButton2/tmButtonValue2
+        weight: 1
+      - path: tmXML1/tmOptions1/tmButtons1/tmButton3
+        weight: 1
+      - path: tmXML1/tmOptions1/tmButtons1/tmButton3/tmButtonRGB3
+        weight: 1
+      - path: tmXML1/tmOptions1/tmButtons1/tmButton3/tmButtonValue3
+        weight: 1
+      - path: tmXML1/tmOptions1/tmButtons1/tmButton4
+        weight: 1
+      - path: tmXML1/tmOptions1/tmButtons1/tmButton4/tmButtonRGB4
+        weight: 1
+      - path: tmXML1/tmOptions1/tmButtons1/tmButton4/tmButtonValue4
+        weight: 1
+      - path: tmXML1/tmOptions1/tmButtons1/tmButton5
+        weight: 1
+      - path: tmXML1/tmOptions1/tmButtons1/tmButton5/tmButtonRGB5
+        weight: 1
+      - path: tmXML1/tmOptions1/tmButtons1/tmButton5/tmButtonValue5
+        weight: 1
+      - path: tmXML1/tmOptions1/tmButtons1/tmButton6
+        weight: 1
+      - path: tmXML1/tmOptions1/tmButtons1/tmButton6/tmButtonRGB6
+        weight: 1
+      - path: tmXML1/tmOptions1/tmButtons1/tmButton6/tmButtonValue6
+        weight: 1
+      - path: tmXML1/tmOptions1/tmButtons1/tmButton7
+        weight: 1
+      - path: tmXML1/tmOptions1/tmButtons1/tmButton7/tmButtonRGB7
+        weight: 1
+      - path: tmXML1/tmOptions1/tmButtons1/tmButton7/tmButtonValue7
+        weight: 1
+      - path: tmXML1/tmOptions1/tmButtonVis1
+        weight: 1
+      - path: tmXML1/tmOptions1/tmSliderVis1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
