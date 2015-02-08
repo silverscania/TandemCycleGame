@@ -27,7 +27,7 @@ GameObject:
   - 4: {fileID: 439828}
   - 114: {fileID: 11439828}
   - 23: {fileID: 2368650}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: GAMELORD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -550,6 +550,7 @@ MonoBehaviour:
   countDown: {fileID: 10277402}
   countSound: {fileID: 8300000, guid: 7d2ece67decd0644081dd91a1a81af51, type: 3}
   goSound: {fileID: 8300000, guid: 103b7c5e38ae93b4093c6b0f8146c360, type: 3}
+  musicPlayer: {fileID: 0}
   winDistance: 35
   gameOver: 0
 --- !u!124 &12484548

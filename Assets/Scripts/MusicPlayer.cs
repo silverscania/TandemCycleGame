@@ -35,4 +35,14 @@ public class MusicPlayer : MonoBehaviour {
 			}
 		}
 	}
+
+	public void stopAll(){
+		for (int n = 0; n < tracks.Length; n++) {
+			tracks[n].Stop();
+		}
+	}
+
+	public void playFanfare(){
+		AudioSource.PlayClipAtPoint (fanfare, transform.position);
+	}
 }

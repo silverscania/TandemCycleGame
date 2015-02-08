@@ -342,7 +342,8 @@ MonoBehaviour:
   - {fileID: 8221140}
   - {fileID: 8221148}
   - {fileID: 8221146}
-  maxSpeed: 20
+  fanfare: {fileID: 8300000, guid: 4c5913c52a933fc4c9b35c3b3af415af, type: 3}
+  maxSpeed: 15
   musicVolume: 1
 --- !u!1001 &100100000
 Prefab:

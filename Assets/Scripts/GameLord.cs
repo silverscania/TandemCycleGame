@@ -17,6 +17,8 @@ public class GameLord : MonoBehaviour {
 	public AudioClip countSound;
 	public AudioClip goSound;
 
+	public MusicPlayer musicPlayer;
+
 	public float winDistance; // If the teams are this far apart, crash the back one and the first one wins
 
 	public bool gameOver = false;
@@ -46,8 +48,12 @@ public class GameLord : MonoBehaviour {
 			team1.enabled = false;
 			team2.enabled = false;
 
+			musicPlayer.stopAll();
+
 			if(winner.alive){
 				winnerName.text = winner.gameObject.name;
+				musicPlayer.playFanfare();
+				winner.alive = false;
 			} else {
 				winnerName.text = "No one";
 			}
