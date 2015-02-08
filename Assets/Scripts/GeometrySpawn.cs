@@ -35,9 +35,9 @@ public class GeometrySpawn : MonoBehaviour {
 		int numFlocks = Random.Range(1, 2);
 		for(int flock = 0; flock < numFlocks; ++flock){
 			Vector3 flockLoc = new Vector3(
-				Random.Range(-80, 0),
+				Random.Range(-30, 0),
 				4.5f,
-				Random.Range(-10, 10));
+				Random.Range(-1, 9));
 			
 			Instantiate(chicken[(int)Random.Range(0, chicken.Length)], 
 			            transform.parent.transform.position + 
@@ -51,9 +51,9 @@ public class GeometrySpawn : MonoBehaviour {
 		int numAi = Random.Range(0,2);
 		for(int i = 0; i < numAi; ++i) {
 			Vector3 flockLoc = new Vector3(
-				Random.Range(-80, 0),
+				Random.Range(-30, 0),
 				0.9f,
-				Random.Range(-1, 5));
+				Random.Range(-1, 9));
 			
 			Instantiate(ai, 
 			            transform.parent.transform.position + 
