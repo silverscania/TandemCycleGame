@@ -43,6 +43,6 @@ public class MusicPlayer : MonoBehaviour {
 	}
 
 	public void playFanfare(){
-		AudioSource.PlayClipAtPoint (fanfare, transform.position);
+		AudioSource.PlayClipAtPoint (fanfare, transform.position, musicVolume);
 	}
 }

@@ -73,6 +73,10 @@ public class GameLord : MonoBehaviour {
 		if (Input.GetButtonUp ("Cancel")) {
 			Application.LoadLevel("main");
 		}
+
+		if (Input.GetKey (KeyCode.Q)) {
+			Application.Quit();
+		}
 	}
 
 	private void count(){
