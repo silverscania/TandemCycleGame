@@ -2094,10 +2094,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crashSounds:
-  - {fileID: 8300000, guid: 158d6b8a8150f0e42ad15286abc9deaf, type: 3}
-  - {fileID: 8300000, guid: 0b30b019df3077f4c861938e608bf043, type: 3}
-  - {fileID: 8300000, guid: 79497c8091df36d4881cbbd4282d6998, type: 3}
-  - {fileID: 8300000, guid: 0162aeaad17fada4bb69289e89f8296b, type: 3}
+  - {fileID: 8300000, guid: 21ceff7610b803c42a70918fd97dc023, type: 3}
+  - {fileID: 8300000, guid: 5b3428f52b41edb48909cb18034e9820, type: 3}
+  - {fileID: 8300000, guid: 02de67aa17ae78346a0db9a09d8f6d5c, type: 3}
+  - {fileID: 8300000, guid: ccd51dca324f82d46a3780b8a6593c4e, type: 3}
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1
