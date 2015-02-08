@@ -7,6 +7,7 @@ public class MusicPlayer : MonoBehaviour {
 	public BikeController teamTwo;
 
 	public AudioSource[] tracks;
+	public AudioClip fanfare;
 
 	public float maxSpeed;
 	public float musicVolume = 1;

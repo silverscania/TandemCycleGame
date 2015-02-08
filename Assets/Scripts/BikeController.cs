@@ -19,6 +19,8 @@ public class BikeController : MonoBehaviour {
 	public float brakeThreshold = 1; // How long time before we brake when not giving proper input
 	public float speedModifier = 0.1f; // 0-1
 
+	public ParticleSystem particles;
+
 	public bool auto = false;
 	public bool alive = true;
 
@@ -122,6 +124,7 @@ public class BikeController : MonoBehaviour {
 		if ((Time.time - lastGoodUpdate) > brakeThreshold) {
 			//Debug.Log ("BRAKE!!! " + (Time.time - lastGoodUpdate));
 			if(frame.velocity.magnitude > 3 && !audioSourceBrake.isPlaying){
+				particles.Play();
 				audioSourceBrake.Play();
 			}
 			setTorqueAndBrakeBack(0, brakeAmount);
