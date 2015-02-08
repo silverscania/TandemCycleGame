@@ -936,7 +936,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: -.707106829}
-  m_LocalPosition: {x: 41.2000008, y: 2.5, z: 9.89999962}
+  m_LocalPosition: {x: 44, y: 1, z: 8.71406269}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400004}
@@ -2220,7 +2220,7 @@ MonoBehaviour:
   audioSourceClick: {fileID: 8259780}
   audioSourcePedal: {fileID: 8259778}
   audioSourceBrake: {fileID: 8259782}
-  maxSpeed: 10
+  maxSpeed: 15
   steerSpeed: 150
   maxSteerAngle: 90
   straightAmount: 45

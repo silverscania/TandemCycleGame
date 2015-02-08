@@ -54,9 +54,10 @@ public class GameLord : MonoBehaviour {
 				winnerName.text = winner.gameObject.name;
 				musicPlayer.playFanfare();
 				winner.alive = false;
-			} else {
-				winnerName.text = "No one";
-			}
+			} 
+//			else {
+//				winnerName.text = "No one";
+//			}
 		}
 
 		if (Input.GetButtonUp ("Fire1") && title.activeSelf) {
@@ -66,11 +67,11 @@ public class GameLord : MonoBehaviour {
 		}
 
 		if (Input.GetButtonUp ("Fire1") && gameOver) {
-			Application.LoadLevel("main 4");
+			Application.LoadLevel("main");
 		}
 
 		if (Input.GetButtonUp ("Cancel")) {
-			Application.Quit();
+			Application.LoadLevel("main");
 		}
 	}
 
