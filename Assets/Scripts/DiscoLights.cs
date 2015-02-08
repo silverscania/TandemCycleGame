@@ -7,13 +7,16 @@ public class DiscoLights : MonoBehaviour {
 	public Rigidbody frame;
 	// Use this for initialization
 	void Start () {
-		randomColour.r = Random.Range(0.65f, 1.0f);
-		randomColour.g = Random.Range(0.65f, 1.0f);
-		randomColour.b = Random.Range(0.65f, 1.0f);
+		float h1, h2 ,s,v;
 
-		anotherRandomColour.r = Random.Range(0.6f, 1.0f);
-		anotherRandomColour.g = Random.Range(0.6f, 1.0f);
-		anotherRandomColour.b = Random.Range(0.65f, 1.0f);
+		h1 = Random.Range(0.65f, 1.0f);
+		h2 = Random.Range(0.65f, 1.0f);
+
+		s = 0.8f;
+		v = 0.7f;
+
+		randomColour = UnityEditor.EditorGUIUtility.HSVToRGB( h1, s, v);
+		anotherRandomColour = UnityEditor.EditorGUIUtility.HSVToRGB( h2, s ,v);
 
 	}
 	
