@@ -4333,6 +4333,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400560}
+  - 82: {fileID: 8200040}
   m_Layer: 0
   m_Name: 5ChickenGroup
   m_TagString: Untagged
@@ -7982,7 +7983,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100560}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.09711075, y: 4.48902321, z: 5.87895584}
+  m_LocalPosition: {x: 13.8454208, y: 4.51016092, z: 2.83068657}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400412}
@@ -10367,6 +10368,64 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!82 &8200040
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100560}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 3cda17d9047cb844496fb48eaef97d75, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
@@ -10454,10 +10513,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crashSounds:
-  - {fileID: 8300000, guid: 158d6b8a8150f0e42ad15286abc9deaf, type: 3}
-  - {fileID: 8300000, guid: 0b30b019df3077f4c861938e608bf043, type: 3}
-  - {fileID: 8300000, guid: 79497c8091df36d4881cbbd4282d6998, type: 3}
-  - {fileID: 8300000, guid: 0162aeaad17fada4bb69289e89f8296b, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10470,10 +10529,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crashSounds:
-  - {fileID: 8300000, guid: 158d6b8a8150f0e42ad15286abc9deaf, type: 3}
-  - {fileID: 8300000, guid: 0b30b019df3077f4c861938e608bf043, type: 3}
-  - {fileID: 8300000, guid: 79497c8091df36d4881cbbd4282d6998, type: 3}
-  - {fileID: 8300000, guid: 0162aeaad17fada4bb69289e89f8296b, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10486,10 +10545,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crashSounds:
-  - {fileID: 8300000, guid: 158d6b8a8150f0e42ad15286abc9deaf, type: 3}
-  - {fileID: 8300000, guid: 0b30b019df3077f4c861938e608bf043, type: 3}
-  - {fileID: 8300000, guid: 79497c8091df36d4881cbbd4282d6998, type: 3}
-  - {fileID: 8300000, guid: 0162aeaad17fada4bb69289e89f8296b, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10502,10 +10561,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crashSounds:
-  - {fileID: 8300000, guid: 158d6b8a8150f0e42ad15286abc9deaf, type: 3}
-  - {fileID: 8300000, guid: 0b30b019df3077f4c861938e608bf043, type: 3}
-  - {fileID: 8300000, guid: 79497c8091df36d4881cbbd4282d6998, type: 3}
-  - {fileID: 8300000, guid: 0162aeaad17fada4bb69289e89f8296b, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10518,10 +10577,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crashSounds:
-  - {fileID: 8300000, guid: 158d6b8a8150f0e42ad15286abc9deaf, type: 3}
-  - {fileID: 8300000, guid: 0b30b019df3077f4c861938e608bf043, type: 3}
-  - {fileID: 8300000, guid: 79497c8091df36d4881cbbd4282d6998, type: 3}
-  - {fileID: 8300000, guid: 0162aeaad17fada4bb69289e89f8296b, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1
