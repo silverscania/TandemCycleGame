@@ -14,6 +14,8 @@ public class GeometryDelete : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		Destroy(transform.parent.gameObject);
+		if(other.name.Equals("Main Camera")) {
+			Destroy(transform.parent.gameObject);
+		}
 	}
 }

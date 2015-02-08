@@ -121,7 +121,7 @@ public class BikeController : MonoBehaviour {
 		// Brake if players don't know how to ride a tandem bike
 		if ((Time.time - lastGoodUpdate) > brakeThreshold) {
 			//Debug.Log ("BRAKE!!! " + (Time.time - lastGoodUpdate));
-			if(frame.velocity.magnitude > 3 && !audioSourceBrake.isPlaying){
+			if(audioSourceBrake && frame.velocity.magnitude > 3 && !audioSourceBrake.isPlaying){
 				audioSourceBrake.Play();
 			}
 			setTorqueAndBrakeBack(0, brakeAmount);
