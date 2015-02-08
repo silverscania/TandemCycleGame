@@ -141,6 +141,7 @@ public class BikeController : MonoBehaviour {
 		// RIGHT TRIGGER
 		float rightTrigger = Input.GetAxis (playerName + "RightTrigger");
 		if (rightTrigger != 0) {
+			Debug.Log("TRIGGER");
 			frontWheel1.steerAngle += steerSpeed * Time.deltaTime * rightTrigger;
 			frontWheel2.steerAngle = frontWheel1.steerAngle;
 		}

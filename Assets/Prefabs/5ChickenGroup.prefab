@@ -9224,7 +9224,7 @@ AudioSource:
   Mute: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 30
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -9630,7 +9630,7 @@ AudioSource:
   Mute: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 30
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -9862,7 +9862,7 @@ AudioSource:
   Mute: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 30
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -9920,7 +9920,7 @@ AudioSource:
   Mute: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 30
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -10326,7 +10326,7 @@ AudioSource:
   Mute: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 30
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -10513,10 +10513,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crashSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 46cefcb6643f9a540b78503cd967a323, type: 3}
+  - {fileID: 8300000, guid: 98ee1d0ccdf132e498c2e465872a72df, type: 3}
+  - {fileID: 8300000, guid: fd7cb7191fdeab9478615c5ff2d4ca57, type: 3}
+  - {fileID: 8300000, guid: ca2c45d54f1b8df41ab8bfca7b09b64a, type: 3}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10529,10 +10529,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crashSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 46cefcb6643f9a540b78503cd967a323, type: 3}
+  - {fileID: 8300000, guid: 98ee1d0ccdf132e498c2e465872a72df, type: 3}
+  - {fileID: 8300000, guid: fd7cb7191fdeab9478615c5ff2d4ca57, type: 3}
+  - {fileID: 8300000, guid: ca2c45d54f1b8df41ab8bfca7b09b64a, type: 3}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10545,10 +10545,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crashSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 46cefcb6643f9a540b78503cd967a323, type: 3}
+  - {fileID: 8300000, guid: 98ee1d0ccdf132e498c2e465872a72df, type: 3}
+  - {fileID: 8300000, guid: fd7cb7191fdeab9478615c5ff2d4ca57, type: 3}
+  - {fileID: 8300000, guid: ca2c45d54f1b8df41ab8bfca7b09b64a, type: 3}
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10561,10 +10561,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crashSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 46cefcb6643f9a540b78503cd967a323, type: 3}
+  - {fileID: 8300000, guid: 98ee1d0ccdf132e498c2e465872a72df, type: 3}
+  - {fileID: 8300000, guid: fd7cb7191fdeab9478615c5ff2d4ca57, type: 3}
+  - {fileID: 8300000, guid: ca2c45d54f1b8df41ab8bfca7b09b64a, type: 3}
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10577,10 +10577,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crashSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 46cefcb6643f9a540b78503cd967a323, type: 3}
+  - {fileID: 8300000, guid: 98ee1d0ccdf132e498c2e465872a72df, type: 3}
+  - {fileID: 8300000, guid: fd7cb7191fdeab9478615c5ff2d4ca57, type: 3}
+  - {fileID: 8300000, guid: ca2c45d54f1b8df41ab8bfca7b09b64a, type: 3}
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1

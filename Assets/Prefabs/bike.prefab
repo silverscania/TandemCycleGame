@@ -2220,7 +2220,7 @@ MonoBehaviour:
   audioSourceClick: {fileID: 8259780}
   audioSourcePedal: {fileID: 8259778}
   audioSourceBrake: {fileID: 8259782}
-  maxSpeed: 15
+  maxSpeed: 10
   steerSpeed: 150
   maxSteerAngle: 90
   straightAmount: 45
