@@ -57,12 +57,12 @@ public class BikeController : MonoBehaviour {
 		}
 
 		//JointSpring hingeSpring = balanceWeight.hingeJoint.spring;
-		if(Input.GetKey(KeyCode.A)) {
+		if(Input.GetKey(KeyCode.A) && !auto) {
 			frontWheel1.steerAngle += -steerSpeed*Time.deltaTime;
 			frontWheel2.steerAngle = frontWheel1.steerAngle;
 			//hingeSpring.targetPosition = 10;
 		}
-		else if(Input.GetKey(KeyCode.D)) {
+		else if(Input.GetKey(KeyCode.D) && !auto) {
 			frontWheel1.steerAngle += steerSpeed*Time.deltaTime;
 			frontWheel2.steerAngle = frontWheel1.steerAngle;
 			//hingeSpring.targetPosition = 10;
@@ -121,8 +121,7 @@ public class BikeController : MonoBehaviour {
 		}
 
 		// Brake if players don't know how to ride a tandem bike
-		if ((Time.time - lastGoodUpdate) > brakeThreshold) {
-			//Debug.Log ("BRAKE!!! " + (Time.time - lastGoodUpdate));
+		if ((Time.time - lastGoodUpdate) > brakeThreshold && !Input.GetKey(KeyCode.W)) {
 			if(frame.velocity.magnitude > 3 && !audioSourceBrake.isPlaying){
 				particles.Play();
 				audioSourceBrake.Play();
@@ -141,7 +140,6 @@ public class BikeController : MonoBehaviour {
 		// RIGHT TRIGGER
 		float rightTrigger = Input.GetAxis (playerName + "RightTrigger");
 		if (rightTrigger != 0) {
-			Debug.Log("TRIGGER");
 			frontWheel1.steerAngle += steerSpeed * Time.deltaTime * rightTrigger;
 			frontWheel2.steerAngle = frontWheel1.steerAngle;
 		}
@@ -170,14 +168,14 @@ public class BikeController : MonoBehaviour {
 			}
 		}
 
-		if(Input.GetKey(KeyCode.W)) {
+		if(Input.GetKey(KeyCode.W) && !auto) {
 			setTorqueAndBrakeFront(5, 0);
 			setTorqueAndBrakeBack(5, 0);
 		}
 
 		if (auto) {
-			setTorqueAndBrakeFront(3, 0);
-			setTorqueAndBrakeBack(3, 0);
+			setTorqueAndBrakeFront(4, 0);
+			setTorqueAndBrakeBack(4, 0);
 		}
 	}
 

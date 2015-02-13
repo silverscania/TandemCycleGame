@@ -16,7 +16,7 @@ public class ChickenController : MonoBehaviour {
 		if(collider.enabled == false && Time.time > collisionTime + 5) {
 			Destroy(gameObject);
 		}
-		if(transform.position.y < -5 || transform.position.y > 10) {
+		if(transform.position.y < -5 || transform.position.y > 20) {
 			Destroy(gameObject);
 		}
 	}
