@@ -60,13 +60,13 @@ public class GameLord : MonoBehaviour {
 //			}
 		}
 
-		if (Input.GetButtonUp ("Fire1") && title.activeSelf) {
+		if (Input.GetButtonUp ("Jump") && title.activeSelf) {
 			// Start the game
 			title.SetActive(false);
 			countDownGo();
 		}
 
-		if (Input.GetButtonUp ("Fire1") && gameOver) {
+		if (Input.GetButtonUp ("Jump") && gameOver) {
 			Application.LoadLevel("main");
 		}
 
