@@ -6,8 +6,7 @@ public class BikeController : MonoBehaviour {
 	public bool playerTwo;
 
 	public WheelCollider frontWheel1, frontWheel2, backWheel1, backWheel2;
-	public Rigidbody frame, balanceWeight;
-	public GameObject mark;
+	public Rigidbody frame;
 	public AudioSource audioSourceClick;
 	public AudioSource audioSourcePedal;
 	public AudioSource audioSourceBrake;
@@ -23,6 +22,10 @@ public class BikeController : MonoBehaviour {
 
 	public bool auto = false;
 	public bool alive = true;
+
+	public KeyCode forwardsKey = KeyCode.W, 
+					leftKey = KeyCode.A, 
+					rightKey = KeyCode.D;
 
 	// Joy input
 
@@ -40,8 +43,6 @@ public class BikeController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		mark = GameObject.Find("Mark");
-
 		if (playerTwo) {
 			playerName = "P2";
 		}
@@ -56,13 +57,12 @@ public class BikeController : MonoBehaviour {
 			return;
 		}
 
-		//JointSpring hingeSpring = balanceWeight.hingeJoint.spring;
-		if(Input.GetKey(KeyCode.A) && !auto) {
+		if(Input.GetKey(leftKey) && !auto) {
 			frontWheel1.steerAngle += -steerSpeed*Time.deltaTime;
 			frontWheel2.steerAngle = frontWheel1.steerAngle;
 			//hingeSpring.targetPosition = 10;
 		}
-		else if(Input.GetKey(KeyCode.D) && !auto) {
+		else if(Input.GetKey(rightKey) && !auto) {
 			frontWheel1.steerAngle += steerSpeed*Time.deltaTime;
 			frontWheel2.steerAngle = frontWheel1.steerAngle;
 			//hingeSpring.targetPosition = 10;
@@ -121,7 +121,7 @@ public class BikeController : MonoBehaviour {
 		}
 
 		// Brake if players don't know how to ride a tandem bike
-		if ((Time.time - lastGoodUpdate) > brakeThreshold && !Input.GetKey(KeyCode.W)) {
+		if ((Time.time - lastGoodUpdate) > brakeThreshold && !Input.GetKey(forwardsKey)) {
 			if(frame.velocity.magnitude > 3 && !audioSourceBrake.isPlaying){
 				particles.Play();
 				audioSourceBrake.Play();
@@ -168,7 +168,7 @@ public class BikeController : MonoBehaviour {
 			}
 		}
 
-		if(Input.GetKey(KeyCode.W) && !auto) {
+		if(Input.GetKey(forwardsKey) && !auto) {
 			setTorqueAndBrakeFront(5, 0);
 			setTorqueAndBrakeBack(5, 0);
 		}
